@@ -67,7 +67,7 @@ class Board extends Component {
     return board;
   };
   render() {
-    if (this.props.time > 50) {
+    if (this.props.time > 0) {
       return (
         <div className="container-fluid">
           <div className="fixed-top text-left">

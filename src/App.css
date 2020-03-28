@@ -28,6 +28,28 @@
   color: #005cb4;
 }
 
+.footer {
+  width: 100%;
+  position: fixed;
+  clear: both;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+a {
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ffffff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
