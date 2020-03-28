@@ -21,6 +21,8 @@ const GameOver = props => {
       <br></br>
       <br></br>
       <font size="7" color="white">
+        Highscore : {props.highscore}
+        <br></br>
         Score : {props.location.state.score2}
       </font>
       <div className="row">
@@ -79,7 +81,8 @@ const mapToStateToProps = state => {
   return {
     score: state.board.score,
     size: state.board.size,
-    speed: state.board.speed
+    speed: state.board.speed,
+    highscore: state.board.highscore
   };
 };
 const mapDispatchToProps = dispatch => {

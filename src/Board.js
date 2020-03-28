@@ -3,16 +3,16 @@ import Hole from "./Hole";
 import Timer from "./Timer";
 import { connect } from "react-redux";
 import { timer } from "./redux/actions";
-import { getScore } from "./redux/actions";
+import { getScore, setHighscore } from "./redux/actions";
 import { Link, Redirect } from "react-router-dom";
 import Sound from "react-sound";
 
 class Board extends Component {
   state = {
-    score: 0,
     time: 0,
     cycle: true,
-    mapping: []
+    mapping: [],
+    highscore: 0
   };
 
   componentDidMount = () => {
@@ -28,6 +28,9 @@ class Board extends Component {
   };
 
   componentWillUnmount = () => {
+    if (this.props.score > this.props.highscore) {
+      this.props.setHighscore(this.props.score);
+    }
     clearInterval(this.interval);
   };
 
@@ -64,7 +67,7 @@ class Board extends Component {
     return board;
   };
   render() {
-    if (this.props.time > 0) {
+    if (this.props.time > 50) {
       return (
         <div className="container-fluid">
           <div className="fixed-top text-left">
@@ -101,7 +104,13 @@ class Board extends Component {
     } else {
       return (
         <Redirect
-          to={{ pathname: "/gameover/", state: { score2: this.props.score } }}
+          to={{
+            pathname: "/gameover/",
+            state: {
+              score2: this.props.score,
+              highscore2: this.props.highscore
+            }
+          }}
         />
       );
     }
@@ -112,14 +121,16 @@ const mapStateToProps = state => {
     size: state.board.size,
     score: state.board.score,
     speed: state.board.speed,
-    time: state.board.time
+    time: state.board.time,
+    highscore: state.board.highscore
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     timer: time => dispatch(timer(time)),
-    getScore: score => dispatch(getScore(score))
+    getScore: score => dispatch(getScore(score)),
+    setHighscore: highscore => dispatch(setHighscore(highscore))
   };
 };
 
