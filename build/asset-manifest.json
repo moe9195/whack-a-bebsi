@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/whack-a-bebsi/static/css/main.97e985f1.chunk.css",
-    "main.js": "/whack-a-bebsi/static/js/main.4ca05a56.chunk.js",
-    "main.js.map": "/whack-a-bebsi/static/js/main.4ca05a56.chunk.js.map",
+    "main.css": "/whack-a-bebsi/static/css/main.9df4981d.chunk.css",
+    "main.js": "/whack-a-bebsi/static/js/main.0fd016fd.chunk.js",
+    "main.js.map": "/whack-a-bebsi/static/js/main.0fd016fd.chunk.js.map",
     "runtime-main.js": "/whack-a-bebsi/static/js/runtime-main.5cc1b15e.js",
     "runtime-main.js.map": "/whack-a-bebsi/static/js/runtime-main.5cc1b15e.js.map",
     "static/js/2.603c0b29.chunk.js": "/whack-a-bebsi/static/js/2.603c0b29.chunk.js",
     "static/js/2.603c0b29.chunk.js.map": "/whack-a-bebsi/static/js/2.603c0b29.chunk.js.map",
     "index.html": "/whack-a-bebsi/index.html",
-    "precache-manifest.466792033db7e51214066558966bb773.js": "/whack-a-bebsi/precache-manifest.466792033db7e51214066558966bb773.js",
+    "precache-manifest.599386fb15ffed47cb1df3ff82d47834.js": "/whack-a-bebsi/precache-manifest.599386fb15ffed47cb1df3ff82d47834.js",
     "service-worker.js": "/whack-a-bebsi/service-worker.js",
-    "static/css/main.97e985f1.chunk.css.map": "/whack-a-bebsi/static/css/main.97e985f1.chunk.css.map",
+    "static/css/main.9df4981d.chunk.css.map": "/whack-a-bebsi/static/css/main.9df4981d.chunk.css.map",
     "static/js/2.603c0b29.chunk.js.LICENSE.txt": "/whack-a-bebsi/static/js/2.603c0b29.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5cc1b15e.js",
     "static/js/2.603c0b29.chunk.js",
-    "static/css/main.97e985f1.chunk.css",
-    "static/js/main.4ca05a56.chunk.js"
+    "static/css/main.9df4981d.chunk.css",
+    "static/js/main.0fd016fd.chunk.js"
   ]
 }

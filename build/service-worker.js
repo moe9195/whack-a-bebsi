@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/whack-a-bebsi/precache-manifest.466792033db7e51214066558966bb773.js"
+  "/whack-a-bebsi/precache-manifest.599386fb15ffed47cb1df3ff82d47834.js"
 );
 
 self.addEventListener('message', (event) => {
